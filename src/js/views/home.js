@@ -1,15 +1,30 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 
 export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
-	</div>
+	<>
+		<section className = "contact-search p-3">
+			<div className = "container">
+				<div className = "grid">
+					<div className = "row">
+						<div className = "col">
+							<p className = "h3"> Contact Manager
+							</p>
+						</div>
+						<div className = "row">
+							<div className = "col-md-6">
+								<form>
+									<div className = "col">
+										<div className = "mb-2">
+											<input type = "submit" className="btn btn-outline-dak" value="Search"/>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</>
 );
