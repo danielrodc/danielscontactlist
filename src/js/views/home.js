@@ -1,30 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../styles/home.css";
+import { Context } from "../store/appContext.js";
+import ContactCard from "../component/ContactCard.jsx";
 
-export const Home = () => (
-	<>
-		<section className = "contact-search p-3">
-			<div className = "container">
-				<div className = "grid">
-					<div className = "row">
-						<div className = "col">
-							<p className = "h3"> Contact Manager
-							</p>
-						</div>
-						<div className = "row">
-							<div className = "col-md-6">
-								<form>
-									<div className = "col">
-										<div className = "mb-2">
-											<input type = "submit" className="btn btn-outline-dak" value="Search"/>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</>
-);
+export const Home = () => {
+  const { store } = useContext(Context);
+  document.title = "Contact list";
+  return (
+    <>
+      {store.users.map((user, index) => {
+        return (
+          <ContactCard
+            key={index}
+            name={user.full_name}
+            phone={user.phone}
+            id={user.id}
+            email={user.email}
+            address={user.address}
+          />
+        );
+      })}
+    </>
+  );
+};
