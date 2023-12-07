@@ -8,6 +8,9 @@ const ContactCard = (props) => {
 
   function handleDeleteUser() {
     actions.deleteUser(props.id);
+
+    console.log("estoy aqui")
+    
   }
 
   return (

@@ -82,7 +82,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		  const actions = getActions();
 		  const store = getStore();
 		  try {
-			let response = await fetch(`${store.urlBase}/${id}`, {
+			let response = await fetch(`${store.urlBase}${id}`, {
 			  method: "DELETE",
 			});
 			if (response.ok) {
@@ -96,7 +96,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		  const actions = getActions();
 		  const store = getStore();
 		  try {
-			let response = await fetch(`${store.urlBase}/${id}`, {
+			let response = await fetch(`${store.urlBase}${id}`, {
 			  method: "PUT",
 			  headers: { "Content-Type": "application/json" },
 			  body: JSON.stringify({
