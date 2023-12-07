@@ -25,11 +25,11 @@ const ContactCard = (props) => {
             <p>{props.address ? props.address : "Address"}</p>
           </div>
           <div className="d-flex">
-            <i className="fa-solid fa-phone me-3 fs-5"></i>
+            <i className="fas fa-phone me-3 fs-5"></i>
             <p>{props.phone ? props.phone : "Phone"}</p>
           </div>
           <div className="d-flex">
-            <i className="fa-solid fa-envelope me-3 fs-5"></i>
+            <i className="fas fa-envelope me-3 fs-5"></i>
             <p>{props.email ? props.email : "Email"}</p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const ContactCard = (props) => {
             ></i>
           </Link>
           <i
-            className="functions fa-solid fa-trash me-3 fs-5 text-danger"
+            className="functions fas fa-trash me-3 fs-5 text-danger"
             type="button"
             onClick={handleDeleteUser}
           ></i>
