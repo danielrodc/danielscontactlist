@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 	  store: {
-		urlBase: "https://assets.breatheco.de/apis/fake/contact/",
+		urlBase: "https://playground.4geeks.com/apis/fake/contact/",
 		demo: {
 		  name: "Name",
 		  location: "USA",

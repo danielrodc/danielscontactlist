@@ -14,7 +14,7 @@ const ContactCard = (props) => {
     <>
       <div className="col-5 border border-light rounded m-auto d-flex">
         <div className="picture col-3 d-flex justify-content-center align-items-center">
-          <img className="rounded-circle h-75 w-75" src={imgUrl} />
+          <img className="fa-regular fa-circle h-75 w-75" src={imgUrl} />
         </div>
         <div className="info col-6">
           <div className="mt-3">
